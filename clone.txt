@@ -1,0 +1,5 @@
+git clone https://github.com/andyreagan/d3-template.git
+mv d3-template my-test
+cd my-test
+# get rid of the template
+\rm -rf .git

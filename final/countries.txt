@@ -1,0 +1,193 @@
+Country	WHO Country code	X WHO Country code
+Afghanistan	3010	X3010
+Albania	4005	X4005
+Algeria	1010	X1010
+Andorra	4008	X4008
+Angola	1020	X1020
+Antigua and Barbuda	2010	X2010
+Argentina	2020	X2020
+Armenia	4007	X4007
+Australia	5020	X5020
+Austria	4010	X4010
+Azerbaijan	4012	X4012
+Bahamas	2030	X2030
+Bahrain	3020	X3020
+Bangladesh	3025	X3025
+Barbados	2040	X2040
+Belarus	4018	X4018
+Belgium	4020	X4020
+Belize	2045	X2045
+Benin	1025	X1025
+Bhutan	3027	X3027
+Bolivia	2060	X2060
+Bosnia and Herzegovina	4025	X4025
+Botswana	1030	X1030
+Brazil	2070	X2070
+Brunei Darussalam	3030	X3030
+Bulgaria	4030	X4030
+Burkina Faso	1035	X1035
+Burundi	1040	X1040
+Cambodia	3050	X3050
+Cameroon	1045	X1045
+Canada	2090	X2090
+Cape Verde	1060	X1060
+Central African Republic	1070	X1070
+Chad	1080	X1080
+Chile	2120	X2120
+China	3068	X3068
+Colombia	2130	X2130
+Comoros	1090	X1090
+Congo	1100	X1100
+Cook Islands	5060	X5060
+Costa Rica	2140	X2140
+Croatia	4038	X4038
+Cuba	2150	X2150
+Cyprus	3080	X3080
+Czech Republic	4045	X4045
+Côte d'Ivoire	1115	X1115
+Democratic People's Republic of Korea	3083	X3083
+Democratic Republic of the Congo	1555	X1555
+Denmark	4050	X4050
+Djibouti	1120	X1120
+Dominica	2160	X2160
+Dominican Republic	2170	X2170
+Ecuador	2180	X2180
+Egypt	1125	X1125
+El Salvador	2190	X2190
+Equatorial Guinea	1130	X1130
+Eritrea	1135	X1135
+Estonia	4055	X4055
+Ethiopia	1140	X1140
+Fiji	5070	X5070
+Finland	4070	X4070
+France	4080	X4080
+Gabon	1160	X1160
+Gambia	1170	X1170
+Georgia	4084	X4084
+Germany	4085	X4085
+Ghana	1180	X1180
+Greece	4140	X4140
+Grenada	2230	X2230
+Guatemala	2250	X2250
+Guinea	1190	X1190
+Guinea-Bissau	1192	X1192
+Guyana	2260	X2260
+Haiti	2270	X2270
+Honduras	2280	X2280
+Hungary	4150	X4150
+Iceland	4160	X4160
+India	3100	X3100
+Indonesia	3110	X3110
+Iran (Islamic Republic of)	3130	X3130
+Iraq	3140	X3140
+Ireland	4170	X4170
+Israel	3150	X3150
+Italy	4180	X4180
+Jamaica	2290	X2290
+Japan	3160	X3160
+Jordan	3170	X3170
+Kazakhstan	4182	X4182
+Kenya	1220	X1220
+Kiribati	5105	X5105
+Kuwait	3190	X3190
+Kyrgyzstan	4184	X4184
+Lao People's Democratic Republic	3200	X3200
+Latvia	4186	X4186
+Lebanon	3210	X3210
+Lesotho	1230	X1230
+Liberia	1240	X1240
+Libyan Arab Jamahiriya	1250	X1250
+Lithuania	4188	X4188
+Luxembourg	4190	X4190
+Madagascar	1260	X1260
+Malawi	1270	X1270
+Malaysia	3236	X3236
+Maldives	3255	X3255
+Mali	1280	X1280
+Malta	4200	X4200
+Marshall Islands	5107	X5107
+Mauritania	1290	X1290
+Mauritius	1300	X1300
+Mexico	2310	X2310
+Micronesia (Federated States of)	5108	X5108
+Monaco	4205	X4205
+Mongolia	3260	X3260
+Morocco	1310	X1310
+Mozambique	1320	X1320
+Myanmar	3270	X3270
+Namibia	1325	X1325
+Nauru	5110	X5110
+Nepal	3280	X3280
+Netherlands	4210	X4210
+New Zealand	5150	X5150
+Nicaragua	2340	X2340
+Niger	1330	X1330
+Nigeria	1340	X1340
+Niue	5170	X5170
+Norway	4220	X4220
+Oman	3285	X3285
+Pakistan	3290	X3290
+Palau	5180	X5180
+Panama	2350	X2350
+Papua New Guinea	5195	X5195
+Paraguay	2360	X2360
+Peru	2370	X2370
+Philippines	3300	X3300
+Poland	4230	X4230
+Portugal	4240	X4240
+Qatar	3320	X3320
+Republic of Korea	3325	X3325
+Republic of Moldova	4260	X4260
+Romania	4270	X4270
+Russian Federation	4272	X4272
+Rwanda	1370	X1370
+Saint Kitts and Nevis	2385	X2385
+Saint Lucia	2400	X2400
+Saint Vincent and the Grenadines	2420	X2420
+Samoa	5197	X5197
+San Marino	4275	X4275
+Sao Tome and Principe	1385	X1385
+Saudi Arabia	3340	X3340
+Senegal	1390	X1390
+Serbia and Montenegro	4350	X4350
+Seychelles	1400	X1400
+Sierra Leone	1410	X1410
+Singapore	3350	X3350
+Slovakia	4274	X4274
+Slovenia	4276	X4276
+Solomon Islands	5198	X5198
+Somalia	1420	X1420
+South Africa	1430	X1430
+Spain	4280	X4280
+Sri Lanka	3365	X3365
+Sudan	1470	X1470
+Suriname	2430	X2430
+Swaziland	1480	X1480
+Sweden	4290	X4290
+Switzerland	4300	X4300
+Syrian Arab Republic	3370	X3370
+Tajikistan	4301	X4301
+Thailand	3380	X3380
+The former Yugoslav Republic of Macedonia	4195	X4195
+Timor-Leste	3087	X3087
+Togo	1510	X1510
+Tonga	5200	X5200
+Trinidad and Tobago	2440	X2440
+Tunisia	1520	X1520
+Turkey	3400	X3400
+Turkmenistan	4302	X4302
+Tuvalu	5205	X5205
+Uganda	1530	X1530
+Ukraine	4303	X4303
+United Arab Emirates	3405	X3405
+United Kingdom	4308	X4308
+United Republic of Tanzania	1546	X1546
+United States of America	2450	X2450
+Uruguay	2460	X2460
+Uzbekistan	4335	X4335
+Vanuatu	5207	X5207
+Venezuela (Bolivarian Republic of)	2470	X2470
+Viet Nam	3408	X3408
+Yemen	3420	X3420
+Zambia	1560	X1560
+Zimbabwe	1570	X1570

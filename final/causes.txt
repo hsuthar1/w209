@@ -1,0 +1,131 @@
+GBD code	L1	L2	L3	L4	L5	Child Level	Child	Parent GBD Code	Parent
+W000	All Causes					L1	All Causes		
+W000a	All Causes	Lower uncertainty bound (f)				L2	Lower uncertainty bound (f)	W000	All Causes
+W000b	All Causes	Upper uncertainty bound (f)				L2	Upper uncertainty bound (f)	W000	All Causes
+W001	All Causes	"Communicable, maternal, perinatal and nutritional conditions"				L2	"Communicable, maternal, perinatal and nutritional conditions"	W000	All Causes
+W002	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases			L3	Infectious and parasitic diseases	W001	"Communicable, maternal, perinatal and nutritional conditions"
+W003	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Tuberculosis		L4	Tuberculosis	W002	Infectious and parasitic diseases
+W004	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	STDs excluding HIV		L4	STDs excluding HIV	W002	Infectious and parasitic diseases
+W005	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	STDs excluding HIV	Syphilis	L5	Syphilis	W004	STDs excluding HIV
+W006	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	STDs excluding HIV	Chlamydia	L5	Chlamydia	W004	STDs excluding HIV
+W007	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	STDs excluding HIV	Gonorrhoea	L5	Gonorrhoea	W004	STDs excluding HIV
+W009	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	HIV/AIDS		L4	HIV/AIDS	W002	Infectious and parasitic diseases
+W010	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Diarrhoeal diseases		L4	Diarrhoeal diseases	W002	Infectious and parasitic diseases
+W011	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Childhood-cluster diseases		L4	Childhood-cluster diseases	W002	Infectious and parasitic diseases
+W012	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Childhood-cluster diseases	Pertussis	L5	Pertussis	W011	Childhood-cluster diseases
+W013	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Childhood-cluster diseases	Poliomyelitis	L5	Poliomyelitis	W011	Childhood-cluster diseases
+W014	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Childhood-cluster diseases	Diphtheria	L5	Diphtheria	W011	Childhood-cluster diseases
+W015	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Childhood-cluster diseases	Measles	L5	Measles	W011	Childhood-cluster diseases
+W016	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Childhood-cluster diseases	Tetanus	L5	Tetanus	W011	Childhood-cluster diseases
+W017	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Meningitis		L4	Meningitis	W002	Infectious and parasitic diseases
+W018	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Hepatitis B (g)		L4	Hepatitis B (g)	W002	Infectious and parasitic diseases
+W019	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Hepatitis C (g)		L4	Hepatitis C (g)	W002	Infectious and parasitic diseases
+W020	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Malaria		L4	Malaria	W002	Infectious and parasitic diseases
+W021	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Tropical-cluster diseases		L4	Tropical-cluster diseases	W002	Infectious and parasitic diseases
+W022	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Tropical-cluster diseases	Trypanosomiasis	L5	Trypanosomiasis	W021	Tropical-cluster diseases
+W023	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Tropical-cluster diseases	Chagas disease	L5	Chagas disease	W021	Tropical-cluster diseases
+W024	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Tropical-cluster diseases	Schistosomiasis	L5	Schistosomiasis	W021	Tropical-cluster diseases
+W025	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Tropical-cluster diseases	Leishmaniasis	L5	Leishmaniasis	W021	Tropical-cluster diseases
+W026	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Tropical-cluster diseases	lymphatic filariasis	L5	lymphatic filariasis	W021	Tropical-cluster diseases
+W027	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Tropical-cluster diseases	Onchocerciasis	L5	Onchocerciasis	W021	Tropical-cluster diseases
+W028	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Leprosy		L4	Leprosy	W002	Infectious and parasitic diseases
+W029	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Dengue		L4	Dengue	W002	Infectious and parasitic diseases
+W030	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Japanese encephalitis		L4	Japanese encephalitis	W002	Infectious and parasitic diseases
+W031	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Trachoma		L4	Trachoma	W002	Infectious and parasitic diseases
+W032	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Intestinal nematode infections		L4	Intestinal nematode infections	W002	Infectious and parasitic diseases
+W033	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Intestinal nematode infections	Ascariasis	L5	Ascariasis	W032	Intestinal nematode infections
+W034	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Intestinal nematode infections	Trichuriasis	L5	Trichuriasis	W032	Intestinal nematode infections
+W035	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Infectious and parasitic diseases	Intestinal nematode infections	Hookworm disease	L5	Hookworm disease	W032	Intestinal nematode infections
+W038	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Respiratory infections			L3	Respiratory infections	W001	"Communicable, maternal, perinatal and nutritional conditions"
+W039	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Respiratory infections	Lower respiratory infections		L4	Lower respiratory infections	W038	Respiratory infections
+W040	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Respiratory infections	Upper respiratory infections		L4	Upper respiratory infections	W038	Respiratory infections
+W041	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Respiratory infections	Otitis media		L4	Otitis media	W038	Respiratory infections
+W042	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Maternal conditions			L3	Maternal conditions	W001	"Communicable, maternal, perinatal and nutritional conditions"
+W049	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Perinatal conditions (h)			L3	Perinatal conditions (h)	W001	"Communicable, maternal, perinatal and nutritional conditions"
+W050	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Perinatal conditions (h)	Prematurity and low birth weight		L4	Prematurity and low birth weight	W049	Perinatal conditions (h)
+W051	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Perinatal conditions (h)	Birth asphyxia and birth trauma		L4	Birth asphyxia and birth trauma	W049	Perinatal conditions (h)
+W052	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Perinatal conditions (h)	Neonatal infections and other conditions (i)		L4	Neonatal infections and other conditions (i)	W049	Perinatal conditions (h)
+W053	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Nutritional deficiencies	Nutritional deficiencies		L4	Nutritional deficiencies	W053	Nutritional deficiencies
+W054	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Nutritional deficiencies	Protein-energy malnutrition		L4	Protein-energy malnutrition	W053	Nutritional deficiencies
+W055	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Nutritional deficiencies	Iodine deficiency		L4	Iodine deficiency	W053	Nutritional deficiencies
+W056	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Nutritional deficiencies	Vitamin A deficiency		L4	Vitamin A deficiency	W053	Nutritional deficiencies
+W057	All Causes	"Communicable, maternal, perinatal and nutritional conditions"	Nutritional deficiencies	Iron-deficiency anaemia		L4	Iron-deficiency anaemia	W053	Nutritional deficiencies
+W059	All Causes	Noncommunicable diseases				L2	Noncommunicable diseases	W000	All Causes
+W060	All Causes	Noncommunicable diseases	Malignant neoplasms			L3	Malignant neoplasms	W059	Noncommunicable diseases
+W061	All Causes	Noncommunicable diseases	Malignant neoplasms	Mouth and oropharynx cancers		L4	Mouth and oropharynx cancers	W059	Noncommunicable diseases
+W062	All Causes	Noncommunicable diseases	Malignant neoplasms	Oesophagus cancer		L4	Oesophagus cancer	W059	Noncommunicable diseases
+W063	All Causes	Noncommunicable diseases	Malignant neoplasms	Stomach cancer		L4	Stomach cancer	W059	Noncommunicable diseases
+W064	All Causes	Noncommunicable diseases	Malignant neoplasms	Colon and rectum cancers		L4	Colon and rectum cancers	W059	Noncommunicable diseases
+W065	All Causes	Noncommunicable diseases	Malignant neoplasms	Liver cancer		L4	Liver cancer	W059	Noncommunicable diseases
+W066	All Causes	Noncommunicable diseases	Malignant neoplasms	Pancreas cancer		L4	Pancreas cancer	W059	Noncommunicable diseases
+W067	All Causes	Noncommunicable diseases	Malignant neoplasms	"Trachea, bronchus, lung cancers"		L4	"Trachea, bronchus, lung cancers"	W059	Noncommunicable diseases
+W068	All Causes	Noncommunicable diseases	Malignant neoplasms	Melanoma and other skin cancers		L4	Melanoma and other skin cancers	W059	Noncommunicable diseases
+W069	All Causes	Noncommunicable diseases	Malignant neoplasms	Breast cancer		L4	Breast cancer	W059	Noncommunicable diseases
+W070	All Causes	Noncommunicable diseases	Malignant neoplasms	Cervix uteri cancer		L4	Cervix uteri cancer	W059	Noncommunicable diseases
+W071	All Causes	Noncommunicable diseases	Malignant neoplasms	Corpus uteri cancer		L4	Corpus uteri cancer	W059	Noncommunicable diseases
+W072	All Causes	Noncommunicable diseases	Malignant neoplasms	Ovary cancer		L4	Ovary cancer	W059	Noncommunicable diseases
+W073	All Causes	Noncommunicable diseases	Malignant neoplasms	Prostate cancer		L4	Prostate cancer	W059	Noncommunicable diseases
+W074	All Causes	Noncommunicable diseases	Malignant neoplasms	Bladder cancer		L4	Bladder cancer	W059	Noncommunicable diseases
+W075	All Causes	Noncommunicable diseases	Malignant neoplasms	"Lymphomas, multiple myeloma"		L4	"Lymphomas, multiple myeloma"	W059	Noncommunicable diseases
+W076	All Causes	Noncommunicable diseases	Malignant neoplasms	Leukaemia		L4	Leukaemia	W059	Noncommunicable diseases
+W078	All Causes	Noncommunicable diseases	Other neoplasms			L3	Other neoplasms	W059	Noncommunicable diseases
+W079	All Causes	Noncommunicable diseases	Diabetes mellitus			L3	Diabetes mellitus	W059	Noncommunicable diseases
+W080	All Causes	Noncommunicable diseases	Endocrine disorders			L3	Endocrine disorders	W059	Noncommunicable diseases
+W081	All Causes	Noncommunicable diseases	Neuropsychiatric conditions			L3	Neuropsychiatric conditions	W059	Noncommunicable diseases
+W082	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Unipolar depressive disorders		L4	Unipolar depressive disorders	W059	Noncommunicable diseases
+W083	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Bipolar disorder		L4	Bipolar disorder	W059	Noncommunicable diseases
+W084	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Schizophrenia		L4	Schizophrenia	W059	Noncommunicable diseases
+W085	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Epilepsy		L4	Epilepsy	W059	Noncommunicable diseases
+W086	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Alcohol use disorders		L4	Alcohol use disorders	W059	Noncommunicable diseases
+W087	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Alzheimer and other dementias		L4	Alzheimer and other dementias	W059	Noncommunicable diseases
+W088	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Parkinson disease		L4	Parkinson disease	W059	Noncommunicable diseases
+W089	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Multiple sclerosis		L4	Multiple sclerosis	W059	Noncommunicable diseases
+W090	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Drug use disorders		L4	Drug use disorders	W059	Noncommunicable diseases
+W091	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Post-traumatic stress disorder		L4	Post-traumatic stress disorder	W059	Noncommunicable diseases
+W092	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Obsessive-compulsive disorder		L4	Obsessive-compulsive disorder	W059	Noncommunicable diseases
+W093	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Panic disorder		L4	Panic disorder	W059	Noncommunicable diseases
+W094	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Insomnia (primary)		L4	Insomnia (primary)	W059	Noncommunicable diseases
+W095	All Causes	Noncommunicable diseases	Neuropsychiatric conditions	Migraine		L4	Migraine	W059	Noncommunicable diseases
+W098	All Causes	Noncommunicable diseases	Sense organ diseases			L3	Sense organ diseases	W059	Noncommunicable diseases
+W099	All Causes	Noncommunicable diseases	Sense organ diseases	Glaucoma		L4	Glaucoma	W059	Noncommunicable diseases
+W100	All Causes	Noncommunicable diseases	Sense organ diseases	Cataracts		L4	Cataracts	W059	Noncommunicable diseases
+W101	All Causes	Noncommunicable diseases	Sense organ diseases	Refractive errors		L4	Refractive errors	W059	Noncommunicable diseases
+W102	All Causes	Noncommunicable diseases	Sense organ diseases	"Hearing loss, adult onset"		L4	"Hearing loss, adult onset"	W059	Noncommunicable diseases
+W103	All Causes	Noncommunicable diseases	Sense organ diseases	Macular degeneration and other (j)		L4	Macular degeneration and other (j)	W059	Noncommunicable diseases
+W104	All Causes	Noncommunicable diseases	Cardiovascular diseases			L3	Cardiovascular diseases	W059	Noncommunicable diseases
+W105	All Causes	Noncommunicable diseases	Cardiovascular diseases	Rheumatic heart disease		L4	Rheumatic heart disease	W059	Noncommunicable diseases
+W106	All Causes	Noncommunicable diseases	Cardiovascular diseases	Hypertensive heart disease		L4	Hypertensive heart disease	W059	Noncommunicable diseases
+W107	All Causes	Noncommunicable diseases	Cardiovascular diseases	Ischaemic heart disease		L4	Ischaemic heart disease	W059	Noncommunicable diseases
+W108	All Causes	Noncommunicable diseases	Cardiovascular diseases	Cerebrovascular disease		L4	Cerebrovascular disease	W059	Noncommunicable diseases
+W109	All Causes	Noncommunicable diseases	Cardiovascular diseases	Inflammatory heart diseases (k)		L4	Inflammatory heart diseases (k)	W059	Noncommunicable diseases
+W111	All Causes	Noncommunicable diseases	Respiratory diseases			L3	Respiratory diseases	W059	Noncommunicable diseases
+W112	All Causes	Noncommunicable diseases	Respiratory diseases	Chronic obstructive pulmonary disease		L4	Chronic obstructive pulmonary disease	W059	Noncommunicable diseases
+W113	All Causes	Noncommunicable diseases	Respiratory diseases	Asthma		L4	Asthma	W059	Noncommunicable diseases
+W115	All Causes	Noncommunicable diseases	Digestive diseases			L3	Digestive diseases	W059	Noncommunicable diseases
+W116	All Causes	Noncommunicable diseases	Digestive diseases	Peptic ulcer disease		L4	Peptic ulcer disease	W059	Noncommunicable diseases
+W117	All Causes	Noncommunicable diseases	Digestive diseases	Cirrhosis of the liver		L4	Cirrhosis of the liver	W059	Noncommunicable diseases
+W118	All Causes	Noncommunicable diseases	Digestive diseases	Appendicitis		L4	Appendicitis	W059	Noncommunicable diseases
+W120	All Causes	Noncommunicable diseases	Genitourinary diseases	Genitourinary diseases		L4	Genitourinary diseases	W059	Noncommunicable diseases
+W121	All Causes	Noncommunicable diseases	Genitourinary diseases	Nephritis and nephrosis		L4	Nephritis and nephrosis	W059	Noncommunicable diseases
+W122	All Causes	Noncommunicable diseases	Genitourinary diseases	Benign prostatic hypertrophy		L4	Benign prostatic hypertrophy	W059	Noncommunicable diseases
+W124	All Causes	Noncommunicable diseases	Skin diseases			L3	Skin diseases	W059	Noncommunicable diseases
+W125	All Causes	Noncommunicable diseases	Musculoskeletal diseases			L3	Musculoskeletal diseases	W059	Noncommunicable diseases
+W126	All Causes	Noncommunicable diseases	Musculoskeletal diseases	Rheumatoid arthritis		L4	Rheumatoid arthritis	W059	Noncommunicable diseases
+W127	All Causes	Noncommunicable diseases	Musculoskeletal diseases	Osteoarthritis		L4	Osteoarthritis	W059	Noncommunicable diseases
+W131	All Causes	Noncommunicable diseases	Congenital anomalies			L3	Congenital anomalies	W059	Noncommunicable diseases
+W143	All Causes	Noncommunicable diseases	Oral conditions			L3	Oral conditions	W059	Noncommunicable diseases
+W144	All Causes	Noncommunicable diseases	Oral conditions	Dental caries		L4	Dental caries	W059	Noncommunicable diseases
+W145	All Causes	Noncommunicable diseases	Oral conditions	Periodontal disease		L4	Periodontal disease	W059	Noncommunicable diseases
+W146	All Causes	Noncommunicable diseases	Oral conditions	Edentulism		L4	Edentulism	W059	Noncommunicable diseases
+W148	All Causes	Injuries				L2	Injuries	W000	All Causes
+W149	All Causes	Injuries	Unintentional injuries			L3	Unintentional injuries	W148	Injuries
+W150	All Causes	Injuries	Unintentional injuries	Road traffic accidents		L4	Road traffic accidents	W148	Injuries
+W151	All Causes	Injuries	Unintentional injuries	Poisonings		L4	Poisonings	W148	Injuries
+W152	All Causes	Injuries	Unintentional injuries	Falls		L4	Falls	W148	Injuries
+W153	All Causes	Injuries	Unintentional injuries	Fires		L4	Fires	W148	Injuries
+W154	All Causes	Injuries	Unintentional injuries	Drownings		L4	Drownings	W148	Injuries
+W155	All Causes	Injuries	Unintentional injuries	Other unintentional injuries		L4	Other unintentional injuries	W148	Injuries
+W156	All Causes	Injuries	Intentional injuries			L3	Intentional injuries	W148	Injuries
+W157	All Causes	Injuries	Intentional injuries	Self-inflicted injuries		L4	Self-inflicted injuries	W148	Injuries
+W158	All Causes	Injuries	Intentional injuries	Violence		L4	Violence	W148	Injuries
+W159	All Causes	Injuries	Intentional injuries	War		L4	War	W148	Injuries

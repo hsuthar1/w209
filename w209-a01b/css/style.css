@@ -1,0 +1,17 @@
+h1 {
+    font: 36px sans-serif;
+}
+
+text {
+    font: 12px sans-serif;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}

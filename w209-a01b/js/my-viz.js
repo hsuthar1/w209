@@ -61,6 +61,8 @@ $(function() {
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
             
+            var bisectDate = d3.bisector(function(d) { return d.date; }).left;
+            
             // adds line to chart
             svg.append("path")
                 .datum(data)
@@ -99,8 +101,9 @@ $(function() {
             //exit
             //var scatterExit = scatter.exit();
             
-            //adds a mousover element to the chart
+            //adds a mousover element to the chart, so that user can see the exact value
             // see https://bl.ocks.org/mbostock/3902569
+            // see https://bl.ocks.org/alandunning/cfb7dcd7951826b9eacd54f0647f48d3
             var focus = svg.append("g")
                 .attr("class", "focus")
                 .style("display", "none");
@@ -119,6 +122,24 @@ $(function() {
                 .on("mouseover", function() { focus.style("display", null); })
                 .on("mouseout", function() { focus.style("display", "none"); })
                 .on("mousemove", mousemove);
+            
+            function mousemove() {
+                // helper function to move the focus circle to the location of the mouse
+                var x0 = xScale.invert(d3.mouse(this)[0]);
+                //console.log("x0 is " + x0);
+                var i = bisectDate(data, x0, 1);
+                //console.log("i is " + i);
+                var d0 = data[i-1];
+                //console.log("d0 date is " + data[i-1].date);
+                //console.log("d0 cost is " + data[i-1].cost);
+                var d1 = data[i];
+                //console.log("d1 date is " + data[i].date);
+                //console.log("d1 cost is " + data[i].cost);
+                var d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+                //console.log("d is " + d.cost);
+                focus.attr("transform", "translate(" + xScale(d.date) + "," + yScale(d.cost) + ")");
+                focus.select("text").text(function() {return d.cost});
+            }
             
             console.log("plot finished");
         };

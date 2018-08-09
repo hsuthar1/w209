@@ -1,5 +1,5 @@
 getwd()
-setwd("C:/Temp/w209/final")
+setwd("C:\Users\yangyq\workspaces\ucbiyyq\w209\final\data")
 
 
 # gets the semi-clean manual data

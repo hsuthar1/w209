@@ -1,0 +1,105 @@
+Test tasks and questions
+
+	1. Task 1: For four countries that you are interested in, find which categories of causes of death ails the countries
+	2. Task 2: For four countries you are interested in, and for each cause of death, find which countries rank the first for each causes of death
+	3. Task 3: Which four countries have both low communicable diseases and low injuries?
+    
+	On a scale from 1 to 10, with 1 meaning I disagree, and 10 meaning I agree: 
+    4. Likert 1: I feel the visualization is effective for task 1
+	5. Likert 2: I feel the visualization is effective for task 2
+	6. Likert 3: I feel the visualization is effective for task 3
+    
+	7. General 1: Do you have any comments for us on how to improve the visualization?
+
+
+
+Notes on the tests
+
+Subject 1:
+    Sex: F
+    Age: 60 to 70
+    Order: Task 1 > Task 2 > Task 3
+    Task 1:
+        Was confused by why the scatterplot was located right after the map
+        After figuring out the treemap chart, was able to compare many countries
+            seemed quite intrigued by the results, and tried to compare multiple countries against each other
+        Was eventually able to find the right answers
+        Duration ~15 mins
+    Task 2:
+        Was unable to understand the question without alot of prompting
+        Was confused by if she was supposed to use the scatterplot for this task
+        Was not aware that the list at the bottom of the page was useful as a filter
+        Gave up on task after a couple of attempts
+        Duration ~20 mins
+    Task 3:
+        Was unable to understand the question without alot of prompting
+        Even when suggested to use scatterplot, still unable to perform task until explicitly trained
+        Gave up on task after a couple of attempts
+        Duration ~5 mins
+    Likert 1:
+        10
+    Likert 2:
+        10
+    Likert 3:
+        8
+    General comments:
+        Map color scale was very confusing
+            "why is countryX the darkest if not the world's deadliest country"
+        Scatterplot was very confusing
+            can't see what it is useful for
+            Log scale in scatterplot was very confusing
+        Explanations for the data death rates was very confusing
+            "I think you got them wrong"
+            Doesn't trust the data, but was swayed by origin of data (UN WHO)
+            Data doesn't fit into what subject already believes about certain areas, e.g. Cardiovascular disease and Mediterraean countries
+        Scrolling is hard to understand
+            subject tended to focus on a single visualization at a time
+        Found that the visualization was very useful in challenging her preconcieved ideas about certain regions
+
+        
+        
+Subject 2:
+    Sex: M
+    Age: 40 to 50
+    Order: Task 3 > Task 2 > Task 1
+    Task 1:
+        Was able to find the correct answers eventually
+        Was confused why we were only allowed to choose among five countries
+        Duration ~5 mins
+    Task 2:
+        Only understood question with some prompting
+        Found the filters useful, but couldn't figure out how to drill down into categories to compare the diseases he wanted
+        Was curious why certain diseases weren't mentioned
+        Stumbled on what "ctrl" meant on keyboard
+        Duration ~5 mins
+    Task 3:
+        Used map and tooltips to find the countries by eye
+            made some guesses after some time, but answer not correct
+            tended to focus on "large" countries
+        Was confused why we were only allowed to choose among five countries
+        Duration: ~10 mins
+    Likert 1:
+        5
+    Likert 2:
+        6
+    Likert 3:
+        8
+    General comments:
+        Liked the map, but found it hard to use when looking for comparing to specific tasks
+        Didn't trust the data source at all
+            Seemed to trust it less when explained that it was from the UN WHO
+            Also very confused why we decided to use 2004 data
+        In general, found the page to be sort of confusing
+            Found it annoying having to scroll back and forth
+
+        
+
+Prioritized list of issues and changes. 
+1. Must fix the data explanations and instructions.
+2. Must revisit the map's initial selection; current selection is too confusing.
+3. Should revisit the flow of the visualizations; perhaps too much on one page.
+4. Should make the specific diseases section easier to use.
+5. Could make the interactions between the charts more smooth.
+
+
+

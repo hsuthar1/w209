@@ -13,3 +13,9 @@ Himal, Taiwo, Yang
 WHO, Disease and injury country estimates
 * http://www.who.int/healthinfo/global_burden_disease/estimates_country/en/
 * http://www.who.int/healthinfo/global_burden_disease/gbddeathdalycountryestimates2004.xls?ua=1
+
+## Notes:
+The data folder contains the raw and combined data used by the visuals. The viz folder contains the various version of the visualizations. The latest visualization is GlobalDiseasePrevalence-iter101.twbx.
+
+The Tableau visualization is hosted in Tableau Public
+* https://public.tableau.com/profile/yang.yang.qian#!/vizhome/GlobalDiseasePrevalence-iter101/S1

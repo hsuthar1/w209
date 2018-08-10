@@ -1,0 +1,2545 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0615.1128                               -->
+<workbook source-build='2018.1.2 (20181.18.0615.1128)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SavingAnalyticObjects />
+    <SortTagCleanup />
+    <VizInTooltipHideWorksheet />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10?rev=1.0' id='GlobalDiseasePrevalence-iter101' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='world_disease_2004_v2' inline='true' name='federated.190eedt0907q4e1egkmnw1afmk09' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='world_disease_2004_v2' name='textscan.1d4swtg0zu2tgk1exlae71qevhy7'>
+            <connection class='textscan' directory='C:/Temp/w209/final' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1d4swtg0zu2tgk1exlae71qevhy7' name='world_disease_2004_v2.txt' table='[world_disease_2004_v2#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='GBD.code' ordinal='0' />
+            <column datatype='string' name='L1' ordinal='1' />
+            <column datatype='string' name='L2' ordinal='2' />
+            <column datatype='string' name='L3' ordinal='3' />
+            <column datatype='string' name='L4' ordinal='4' />
+            <column datatype='string' name='L5' ordinal='5' />
+            <column datatype='string' name='Child.Level' ordinal='6' />
+            <column datatype='string' name='Child' ordinal='7' />
+            <column datatype='string' name='Parent.GBD.Code' ordinal='8' />
+            <column datatype='string' name='Parent' ordinal='9' />
+            <column datatype='integer' name='WHO.Country.code' ordinal='10' />
+            <column datatype='string' name='Country' ordinal='11' />
+            <column datatype='real' name='Value' ordinal='12' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GBD.code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GBD.code]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>GBD.code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[L1]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>L1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[L2]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>L2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[L3]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>L3</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[L4]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>L4</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[L5]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>L5</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Child.Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Child.Level]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>Child.Level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Child</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Child]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>Child</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Parent.GBD.Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Parent.GBD.Code]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>Parent.GBD.Code</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Parent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Parent]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>Parent</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WHO.Country.code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WHO.Country.code]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>WHO.Country.code</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[world_disease_2004_v2.txt]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='DPP Communicable Diseases' datatype='real' name='[Calculation_159877810189565952]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [L2] = &quot;Communicable, maternal, perinatal and nutritional conditions&quot; THEN [Value] ELSE 0 END' />
+      </column>
+      <column caption='Log(DPP.NCD)' datatype='real' name='[Calculation_311874298448637958]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LOG(MAX([V2 (copy)]))' />
+      </column>
+      <column caption='Cause Level' datatype='string' name='[Child.Level]' role='dimension' type='nominal' />
+      <column caption='Cause' datatype='string' name='[Child]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+          <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='GBD Code' datatype='string' name='[GBD.code]' role='dimension' type='nominal' />
+      <column caption='All Causes' datatype='string' name='[L1]' role='dimension' type='nominal' />
+      <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+        </aliases>
+      </column>
+      <column caption='Sub-Category' datatype='string' name='[L3]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value=' ' />
+        </aliases>
+      </column>
+      <column caption='Specifics' datatype='string' name='[L4]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value=' ' />
+        </aliases>
+      </column>
+      <column caption='Specifics 2' datatype='string' name='[L5]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value=' ' />
+        </aliases>
+      </column>
+      <column caption='Log(DPP.I)' datatype='real' name='[Log(DPP.CD) (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LOG(MAX([V1 (copy)]))' />
+      </column>
+      <column caption='Log(DPP.CD)' datatype='real' name='[Log(DPP.NCD) (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LOG(MAX([Calculation_159877810189565952]))' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Parent GBD Code' datatype='string' name='[Parent.GBD.Code]' role='dimension' type='nominal' />
+      <column caption='DPP Injuries' datatype='real' name='[V1 (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [L2] = &quot;Injuries&quot; THEN [Value] ELSE 0 END' />
+      </column>
+      <column caption='DPP Non-Communicable Diseases' datatype='real' name='[V2 (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [L2] = &quot;Noncommunicable diseases&quot; THEN [Value] ELSE 0 END' />
+      </column>
+      <column aggregation='None' caption='DPP Communicable Diseases (bin)' datatype='integer' name='[Value CD (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[Calculation_159877810189565952]' peg='0' size='46' />
+      </column>
+      <column aggregation='None' caption='DPP Injuries (bin)' datatype='integer' name='[Value Injuries (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[V1 (copy)]' peg='0' size='12' />
+      </column>
+      <column aggregation='None' caption='DPP Non-Communicable Diseases (bin)' datatype='integer' name='[Value NCD (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[V2 (copy)]' peg='0' size='32' />
+      </column>
+      <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+      <column caption='WHO Country Code' datatype='integer' name='[WHO.Country.code]' role='dimension' type='ordinal' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[L2]' derivation='None' name='[none:L2:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Value CD (bin)]' derivation='None' name='[none:Value CD (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Value NCD (bin)]' derivation='None' name='[none:Value NCD (bin):ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Category,Sub-Category,Specifics,Specifics 2)' hidden='true' name='[Action (Category,Sub-Category,Specifics,Specifics 2)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[L2]' />
+          <groupfilter function='level-members' level='[L3]' />
+          <groupfilter function='level-members' level='[L4]' />
+          <groupfilter function='level-members' level='[L5]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Cause)' hidden='true' name='[Action (Cause)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Child]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Country1)' hidden='true' name='[Action (Country1)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (L1,L2,L3,L4,L5)' hidden='true' name='[Action (L1,L2,L3,L4,L5)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[L1]' />
+          <groupfilter function='level-members' level='[L2]' />
+          <groupfilter function='level-members' level='[L3]' />
+          <groupfilter function='level-members' level='[L4]' />
+          <groupfilter function='level-members' level='[L5]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (L2)' hidden='true' name='[Action (L2)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[L2]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (L3)' hidden='true' name='[Action (L3)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[L3]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (L4)' hidden='true' name='[Action (L4)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[L4]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Value CD (bin))' hidden='true' name='[Action (Value CD (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Value CD (bin):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Value NCD (bin))' hidden='true' name='[Action (Value NCD (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Value NCD (bin):ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Country)' hidden='true' name='[Tooltip (Country)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+        </groupfilter>
+      </group>
+      <group caption='Tooltip (Country1)' hidden='true' name='[Tooltip (Country1)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Levels'>
+          <field>[L1]</field>
+          <field>[L2]</field>
+          <field>[L3]</field>
+          <field>[L4]</field>
+          <field>[L5]</field>
+        </drill-path>
+      </drill-paths>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/ForFinalProject-iter4.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>GBD.code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GBD.code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GBD.code</remote-alias>
+              <ordinal>0</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>L1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[L1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>L1</remote-alias>
+              <ordinal>1</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>L2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[L2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>L2</remote-alias>
+              <ordinal>2</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>L3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[L3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>L3</remote-alias>
+              <ordinal>3</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>L4</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[L4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>L4</remote-alias>
+              <ordinal>4</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>83</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>L5</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[L5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>L5</remote-alias>
+              <ordinal>5</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Child.Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Child.Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Child.Level</remote-alias>
+              <ordinal>6</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Child</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Child]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Child</remote-alias>
+              <ordinal>7</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Parent.GBD.Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Parent.GBD.Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Parent.GBD.Code</remote-alias>
+              <ordinal>8</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Parent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Parent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Parent</remote-alias>
+              <ordinal>9</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WHO.Country.code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WHO.Country.code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WHO.Country.code</remote-alias>
+              <ordinal>10</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>188</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>11</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>188</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>12</ordinal>
+              <family>world_disease_2004_v2.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>817</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.580605' measure-ordering='alphabetic' measure-percentage='0.419395' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;United States of America&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:L2:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Lower uncertainty bound (f)&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Communicable, maternal, perinatal and nutritional conditions&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Injuries&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Upper uncertainty bound (f)&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Noncommunicable diseases&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{3e833f40-2055-42f7-9e09-417f31ae9ba1}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.NCD) (copy):qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{47cdb1d9-42dd-41c0-a991-78d904ec67ad}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]' />
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V2 (copy):qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{62a58c62-f2cb-49bc-a445-e1151f6221bb}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V1 (copy):qk]' />
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V2 (copy):qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{67d1026a-6554-4889-8a63-397eafd4ef0b}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]' />
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V1 (copy):qk]' />
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V2 (copy):qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{ae48ffdc-23f8-41aa-a3af-54649b1fb774}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]' />
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V1 (copy):qk]' />
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V2 (copy):qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{d165ebf9-56bb-41bf-8751-19f75e7ce6df}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]' />
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V1 (copy):qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{e93230ca-da85-4f7f-94d1-6b08420fc967}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]' />
+            <field name='[federated.190eedt0907q4e1egkmnw1afmk09].[sum:V2 (copy):qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight1' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='D1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Country' />
+        <param name='target' value='D1' />
+      </command>
+    </action>
+    <action caption='Filter1' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='D1' type='sheet' />
+      <link caption='Filter1' delimiter=',' escape='\' expression='tsl:D1?%5Bfederated.190eedt0907q4e1egkmnw1afmk09%5D.%5BCountry%5D~s0=&lt;[Country]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Countries,D1-CvI,D1-CvN,D1-Map,D1-NvI' />
+        <param name='target' value='D1' />
+      </command>
+    </action>
+    <action caption='Filter1' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='D2' type='sheet' worksheet='Countries' />
+      <link caption='Filter1' delimiter=',' escape='\' expression='tsl:D2?%5Bfederated.190eedt0907q4e1egkmnw1afmk09%5D.%5BCountry%5D~s0=&lt;[Country]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Countries,D2-DeathDetailsF1' />
+        <param name='target' value='D2' />
+      </command>
+    </action>
+    <action caption='Filter2' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='D2' type='sheet' worksheet='D2-DeathDetailsF1' />
+      <link caption='Filter2' delimiter=',' escape='\' expression='tsl:D2?%5Bfederated.190eedt0907q4e1egkmnw1afmk09%5D.%5BL2%5D~s0=&lt;[L2]~na&gt;&amp;%5Bfederated.190eedt0907q4e1egkmnw1afmk09%5D.%5BL3%5D~s0=&lt;[L3]~na&gt;&amp;%5Bfederated.190eedt0907q4e1egkmnw1afmk09%5D.%5BL4%5D~s0=&lt;[L4]~na&gt;&amp;%5Bfederated.190eedt0907q4e1egkmnw1afmk09%5D.%5BL5%5D~s0=&lt;[L5]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='D2-DeathDetailsF1' />
+        <param name='target' value='D2' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+    </datasources>
+    <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+      <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+          <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+        </aliases>
+      </column>
+      <column caption='Sub-Category' datatype='string' name='[L3]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value=' ' />
+        </aliases>
+      </column>
+      <column caption='Specifics' datatype='string' name='[L4]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value=' ' />
+        </aliases>
+      </column>
+      <column caption='Specifics 2' datatype='string' name='[L5]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='%null%' value=' ' />
+        </aliases>
+      </column>
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Countries'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/Countries?rev=' id='Countries' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+              </aliases>
+            </column>
+            <column caption='Sub-Category' datatype='string' name='[L3]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='Specifics' datatype='string' name='[L4]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='Specifics 2' datatype='string' name='[L5]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Max' name='[max:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Category,Sub-Category,Specifics,Specifics 2)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[L2]' />
+              <groupfilter function='level-members' level='[L3]' />
+              <groupfilter function='level-members' level='[L4]' />
+              <groupfilter function='level-members' level='[L5]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Country)]</column>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]</column>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Category,Sub-Category,Specifics,Specifics 2)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='61' />
+            <format attr='height' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' value='47' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' value='116' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' value='true' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#dccee5</color>
+                <color>#c8afda</color>
+                <color>#b591cf</color>
+                <color>#a375c4</color>
+                <color>#925cb9</color>
+                <color>#8245ae</color>
+                <color>#7230a3</color>
+                <color>#641e98</color>
+                <color>#570e8d</color>
+                <color>#4b0082</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' value='Deaths Per 100,000 Population'>
+              <formatted-text>
+                <run>Deaths Per 100,000 Population</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' />
+              <text column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='D1-CvI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Communicable Diseases vs Injuries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D1-CvI?rev=' id='D1-CvI' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='DPP Communicable Diseases' datatype='real' name='[Calculation_159877810189565952]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [L2] = &quot;Communicable, maternal, perinatal and nutritional conditions&quot; THEN [Value] ELSE 0 END' />
+            </column>
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+              </aliases>
+            </column>
+            <column caption='Log(DPP.I)' datatype='real' name='[Log(DPP.CD) (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOG(MAX([V1 (copy)]))' />
+            </column>
+            <column caption='Log(DPP.CD)' datatype='real' name='[Log(DPP.NCD) (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOG(MAX([Calculation_159877810189565952]))' />
+            </column>
+            <column caption='DPP Injuries' datatype='real' name='[V1 (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [L2] = &quot;Injuries&quot; THEN [Value] ELSE 0 END' />
+            </column>
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_159877810189565952]' derivation='Max' name='[max:Calculation_159877810189565952:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[V1 (copy)]' derivation='Max' name='[max:V1 (copy):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Log(DPP.CD) (copy)]' derivation='User' name='[usr:Log(DPP.CD) (copy):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Log(DPP.NCD) (copy)]' derivation='User' name='[usr:Log(DPP.NCD) (copy):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.CD) (copy):qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.CD) (copy):qk]' scope='rows' value='Log DPP Injuries' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.NCD) (copy):qk]' field-type='quantitative' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.NCD) (copy):qk]' scope='cols' value='Log DPP Communicable Diseases' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' />
+              <tooltip column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]' />
+              <tooltip column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V1 (copy):qk]' />
+              <text column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP Communicable Diseases:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP Injuries:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:V1 (copy):qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-color' value='#898989' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.CD) (copy):qk]</rows>
+        <cols>[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.NCD) (copy):qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='D1-CvN'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Communicable vs Non-Communicable  Diseases</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D1-CvN?rev=' id='D1-CvN' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='DPP Communicable Diseases' datatype='real' name='[Calculation_159877810189565952]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [L2] = &quot;Communicable, maternal, perinatal and nutritional conditions&quot; THEN [Value] ELSE 0 END' />
+            </column>
+            <column caption='Log(DPP.NCD)' datatype='real' name='[Calculation_311874298448637958]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOG(MAX([V2 (copy)]))' />
+            </column>
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+              </aliases>
+            </column>
+            <column caption='Log(DPP.CD)' datatype='real' name='[Log(DPP.NCD) (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOG(MAX([Calculation_159877810189565952]))' />
+            </column>
+            <column caption='DPP Non-Communicable Diseases' datatype='real' name='[V2 (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [L2] = &quot;Noncommunicable diseases&quot; THEN [Value] ELSE 0 END' />
+            </column>
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_159877810189565952]' derivation='Max' name='[max:Calculation_159877810189565952:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[V2 (copy)]' derivation='Max' name='[max:V2 (copy):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_311874298448637958]' derivation='User' name='[usr:Calculation_311874298448637958:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Log(DPP.NCD) (copy)]' derivation='User' name='[usr:Log(DPP.NCD) (copy):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Calculation_311874298448637958:qk]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.NCD) (copy):qk]' field-type='quantitative' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Calculation_311874298448637958:qk]' scope='rows' value='Log DPP Non-Communicable Diseases' />
+            <format attr='title' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.NCD) (copy):qk]' scope='cols' value='Log DPP Communicable Diseases' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]' />
+              <tooltip column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V2 (copy):qk]' />
+              <text column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' />
+              <lod column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP Communicable Diseases:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:Calculation_159877810189565952:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP Non-Communicable Diseases:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:V2 (copy):qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-color' value='#898989' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Calculation_311874298448637958:qk]</rows>
+        <cols>[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.NCD) (copy):qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='D1-DeathsByCat'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Deaths per 100,000 Sub-Categories by Coutry</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D1-DeathsByCat?rev=' id='D1-DeathsByCat' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+              </aliases>
+            </column>
+            <column caption='Sub-Category' datatype='string' name='[L3]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Max' name='[max:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[L2]' derivation='None' name='[none:L2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[L3]' derivation='None' name='[none:L3:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L3:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Cardiovascular diseases&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Congenital anomalies&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Diabetes mellitus&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Digestive diseases&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Endocrine disorders&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Genitourinary diseases&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Infectious and parasitic diseases&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Intentional injuries&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Malignant neoplasms&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Maternal conditions&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Musculoskeletal diseases&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Neuropsychiatric conditions&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Nutritional deficiencies&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Oral conditions&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Other neoplasms&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Perinatal conditions (h)&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Respiratory diseases&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Respiratory infections&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Sense organ diseases&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Skin diseases&quot;' />
+              <groupfilter function='member' level='[none:L3:nk]' member='&quot;Unintentional injuries&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[none:L3:nk]</column>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' value='96' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' />
+              <size column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' />
+              <text column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L3:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Category:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Sub-Category:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:L3:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-transparency' value='129' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='D1-Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D1-Map?rev=' id='D1-Map' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Max' name='[max:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#dccee5</color>
+                <color>#c8afda</color>
+                <color>#b591cf</color>
+                <color>#a375c4</color>
+                <color>#925cb9</color>
+                <color>#8245ae</color>
+                <color>#7230a3</color>
+                <color>#641e98</color>
+                <color>#570e8d</color>
+                <color>#4b0082</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' value='Deaths Per 100,000 Population (DPP)'>
+              <formatted-text>
+                <run>Deaths Per 100,000 Population (DPP)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+            <format attr='enabled' id='181657' value='false' />
+            <format attr='enabled' id='181658' value='false' />
+            <format attr='enabled' id='181686' value='false' />
+            <format attr='enabled' id='181708' value='false' />
+            <format attr='enabled' id='181730' value='false' />
+            <format attr='enabled' id='181732' value='false' />
+            <format attr='enabled' id='181795' value='false' />
+            <format attr='enabled' id='181796' value='false' />
+            <format attr='enabled' id='181794' value='false' />
+            <format attr='enabled' id='181866' value='false' />
+            <format attr='enabled' id='181797' value='false' />
+            <format attr='enabled' id='181793' value='false' />
+            <format attr='enabled' id='181799' value='false' />
+            <format attr='enabled' id='181798' value='false' />
+            <format attr='enabled' id='182057' value='false' />
+            <format attr='enabled' id='182484' value='false' />
+            <format attr='enabled' id='182485' value='false' />
+            <format attr='enabled' id='182486' value='false' />
+            <format attr='enabled' id='181661' value='false' />
+            <format attr='enabled' id='181662' value='false' />
+            <format attr='enabled' id='181951' value='false' />
+            <format attr='enabled' id='182071' value='false' />
+            <format attr='enabled' id='182099' value='false' />
+            <format attr='enabled' id='181665' value='false' />
+            <format attr='enabled' id='181666' value='false' />
+            <format attr='enabled' id='182041' value='false' />
+            <format attr='enabled' id='182048' value='false' />
+            <format attr='enabled' id='182002' value='false' />
+            <format attr='enabled' id='182003' value='false' />
+            <format attr='enabled' id='181943' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' />
+              <lod column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' />
+              <geometry column='[federated.190eedt0907q4e1egkmnw1afmk09].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>&lt;</run>
+                <run bold='true'>Sheet name=&quot;D1-Map-T1&quot; maxwidth=&quot;400&quot; maxheight=&quot;300&quot; filter=&quot;&lt;All Fields&gt;&quot;</run>
+                <run bold='true'>&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>&lt;</run>
+                <run bold='true'>Sheet name=&quot;D1-Map-T2&quot; maxwidth=&quot;400&quot; maxheight=&quot;300&quot; filter=&quot;&lt;All Fields&gt;&quot;</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.190eedt0907q4e1egkmnw1afmk09].[Latitude (generated)]</rows>
+        <cols>[federated.190eedt0907q4e1egkmnw1afmk09].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='D1-Map-T1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D1-Map-T1?rev=' id='D1-Map-T1' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='GBD Code' datatype='string' name='[GBD.code]' role='dimension' type='nominal' />
+            <column caption='All Causes' datatype='string' name='[L1]' role='dimension' type='nominal' />
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Max' name='[max:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GBD.code]' derivation='None' name='[none:GBD.code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[L1]' derivation='None' name='[none:L1:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Tooltip (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action - DeathsByCat]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Tooltip (Country1)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action - Deaths]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:GBD.code:nk]'>
+            <groupfilter function='member' level='[none:GBD.code:nk]' member='&quot;W000&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[none:GBD.code:nk]</column>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Tooltip (Country)]</column>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Tooltip (Country1)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>All Causes:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:L1:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.190eedt0907q4e1egkmnw1afmk09].[none:L1:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='D1-Map-T2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D1-Map-T2?rev=' id='D1-Map-T2' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+              </aliases>
+            </column>
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Max' name='[max:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[L2]' derivation='None' name='[none:L2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Max' name='[rank:max:Value:ok:4]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='ColumnInPane' rank-options='Competition,Descending' type='Rank' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Tooltip (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action - DeathsByCat]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Tooltip (Country1)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action - DeathsByCat]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:L2:nk]' member='&quot;Communicable, maternal, perinatal and nutritional conditions&quot;' />
+              <groupfilter function='member' level='[none:L2:nk]' member='&quot;Injuries&quot;' />
+              <groupfilter function='member' level='[none:L2:nk]' member='&quot;Noncommunicable diseases&quot;' />
+            </groupfilter>
+          </filter>
+          <alphabetic-sort column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' direction='ASC' />
+          <slices>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]</column>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Tooltip (Country)]</column>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Tooltip (Country1)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' scope='cols' value='Deaths Per 100,000 Population' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.190eedt0907q4e1egkmnw1afmk09].[rank:max:Value:ok:4]' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' />
+              <text column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Category:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.190eedt0907q4e1egkmnw1afmk09].[rank:max:Value:ok:4] / [federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk])</rows>
+        <cols>[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='D1-NvI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Non-Communicable Diseases vs Injuries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D1-NvI?rev=' id='D1-NvI' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='Log(DPP.NCD)' datatype='real' name='[Calculation_311874298448637958]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOG(MAX([V2 (copy)]))' />
+            </column>
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+              </aliases>
+            </column>
+            <column caption='Log(DPP.I)' datatype='real' name='[Log(DPP.CD) (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LOG(MAX([V1 (copy)]))' />
+            </column>
+            <column caption='DPP Injuries' datatype='real' name='[V1 (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [L2] = &quot;Injuries&quot; THEN [Value] ELSE 0 END' />
+            </column>
+            <column caption='DPP Non-Communicable Diseases' datatype='real' name='[V2 (copy)]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [L2] = &quot;Noncommunicable diseases&quot; THEN [Value] ELSE 0 END' />
+            </column>
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[V1 (copy)]' derivation='Max' name='[max:V1 (copy):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[V2 (copy)]' derivation='Max' name='[max:V2 (copy):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_311874298448637958]' derivation='User' name='[usr:Calculation_311874298448637958:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Log(DPP.CD) (copy)]' derivation='User' name='[usr:Log(DPP.CD) (copy):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.CD) (copy):qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.CD) (copy):qk]' scope='rows' value='Log DPP Injuries' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Calculation_311874298448637958:qk]' field-type='quantitative' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Calculation_311874298448637958:qk]' scope='cols' value='Log DPP Non-Communicable Diseases' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' />
+              <tooltip column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V2 (copy):qk]' />
+              <tooltip column='[federated.190eedt0907q4e1egkmnw1afmk09].[max:V1 (copy):qk]' />
+              <text column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP Injuries:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:V1 (copy):qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP Non-Communicable Diseases:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:V2 (copy):qk]&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#898989' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Log(DPP.CD) (copy):qk]</rows>
+        <cols>[federated.190eedt0907q4e1egkmnw1afmk09].[usr:Calculation_311874298448637958:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='D2-DeathDetails'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D2-DeathDetails?rev=' id='D2-DeathDetails' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='Cause' datatype='string' name='[Child]' role='dimension' type='nominal' />
+            <column caption='Country' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Congo&quot;' value='&quot;Congo (Brazzaville)&quot;' />
+                <semantic-value key='&quot;Serbia and Montenegro&quot;' value='&quot;Serbia&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+              </aliases>
+            </column>
+            <column caption='Sub-Category' datatype='string' name='[L3]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='Specifics' datatype='string' name='[L4]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='Specifics 2' datatype='string' name='[L5]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='DPP' datatype='real' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Value]' derivation='Max' name='[max:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Child]' derivation='None' name='[none:Child:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Max' name='[rank:max:Value:ok:4]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='ColumnInPane' rank-options='Competition,Descending' type='Rank' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Category,Sub-Category,Specifics,Specifics 2)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action4]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[L2]' />
+              <groupfilter function='level-members' level='[L3]' />
+              <groupfilter function='level-members' level='[L4]' />
+              <groupfilter function='level-members' level='[L5]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Country)]</column>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[Action (Category,Sub-Category,Specifics,Specifics 2)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' scope='cols' value='Deaths Per 100,000 Population' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' value='34' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Child:nk]' value='92' />
+            <format attr='width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]' value='164' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.190eedt0907q4e1egkmnw1afmk09].[rank:max:Value:ok:4]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Cause:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:Child:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>DPP:&#9;</run>
+                <run bold='true'>&lt;[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#898989' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.190eedt0907q4e1egkmnw1afmk09].[none:Child:nk] / ([federated.190eedt0907q4e1egkmnw1afmk09].[rank:max:Value:ok:4] / [federated.190eedt0907q4e1egkmnw1afmk09].[none:Country:nk]))</rows>
+        <cols>[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='D2-DeathDetailsF1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D2-DeathDetailsF1?rev=' id='D2-DeathDetailsF1' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world_disease_2004_v2' name='federated.190eedt0907q4e1egkmnw1afmk09' />
+          </datasources>
+          <datasource-dependencies datasource='federated.190eedt0907q4e1egkmnw1afmk09'>
+            <column caption='All Causes' datatype='string' name='[L1]' role='dimension' type='nominal' />
+            <column caption='Category' datatype='string' name='[L2]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Noncommunicable diseases&quot;' value='Non-Communicable Diseases' />
+              </aliases>
+            </column>
+            <column caption='Sub-Category' datatype='string' name='[L3]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='Specifics' datatype='string' name='[L4]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column caption='Specifics 2' datatype='string' name='[L5]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='%null%' value=' ' />
+              </aliases>
+            </column>
+            <column-instance column='[L1]' derivation='None' name='[none:L1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[L2]' derivation='None' name='[none:L2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[L3]' derivation='None' name='[none:L3:nk]' pivot='key' type='nominal' />
+            <column-instance column='[L4]' derivation='None' name='[none:L4:nk]' pivot='key' type='nominal' />
+            <column-instance column='[L5]' derivation='None' name='[none:L5:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:L2:nk]' member='&quot;Communicable, maternal, perinatal and nutritional conditions&quot;' />
+              <groupfilter function='member' level='[none:L2:nk]' member='&quot;Injuries&quot;' />
+              <groupfilter function='member' level='[none:L2:nk]' member='&quot;Noncommunicable diseases&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L5:nk]' value='39' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' value='108' />
+            <format attr='width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L3:nk]' value='172' />
+            <format attr='width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L4:nk]' value='164' />
+            <format attr='width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L5:nk]' value='200' />
+            <format attr='width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L1:nk]' value='68' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L1:nk]' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='5' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' value='260' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.190eedt0907q4e1egkmnw1afmk09].[none:L1:nk] / ([federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk] / ([federated.190eedt0907q4e1egkmnw1afmk09].[none:L3:nk] / ([federated.190eedt0907q4e1egkmnw1afmk09].[none:L4:nk] / [federated.190eedt0907q4e1egkmnw1afmk09].[none:L5:nk]))))</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Ab'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='39250' id='1' type='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontsize='36'>Global Disease Prevalence</run>
+              <run>&#10;MIDS W029 Final Project&#10;&#10;This visual is intended to be used by health conscious travelers and public health enthusiasts alike.  Through this visual, users can view overall death rates for countries across the globe, with the ability to drill down and compare prevalence rates for their selected causes of death for their selected countries.&#10;&#10;Team Members:&#10;Himal, Taiwo, Yang&#10;&#10;Data Source: WHO, Disease and injury country estimates&#10;* </run>
+              <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;http://www.who.int/healthinfo/global_burden_disease/estimates_country/en/&amp;quot;'>http://www.who.int/healthinfo/global_burden_disease/estimates_country/en/</run>
+              <run>&#10;* </run>
+              <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;http://www.who.int/healthinfo/global_burden_disease/gbddeathdalycountryestimates2004.xls?ua=1&amp;quot;'>http://www.who.int/healthinfo/global_burden_disease/gbddeathdalycountryestimates2004.xls?ua=1</run>
+              <run>Æ&#10;&#10;&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='58750' id='3' type='empty' w='98400' x='800' y='40250'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='D1'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D1?rev=' id='D1' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <style />
+      <size maxheight='1500' maxwidth='1000' minheight='1500' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='92000' id='28' param='horz' type='layout-flow' w='98400' x='800' y='533'>
+            <zone h='92000' id='26' type='layout-basic' w='98400' x='800' y='533'>
+              <zone h='38850' id='21' param='horz' type='layout-flow' w='98400' x='800' y='11150'>
+                <zone h='38850' id='19' type='layout-basic' w='98400' x='800' y='11150'>
+                  <zone h='38850' id='11' param='horz' type='layout-flow' w='98400' x='800' y='11150'>
+                    <zone h='38850' id='9' type='layout-basic' w='98400' x='800' y='11150'>
+                      <zone h='38850' id='5' param='horz' type='layout-flow' w='78700' x='20500' y='11150'>
+                        <zone h='38850' id='3' type='layout-basic' w='78700' x='20500' y='11150'>
+                          <zone h='15650' id='1' name='D1-Map' show-title='false' w='40246' x='20500' y='11150'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='19583' id='13' name='D1-CvN' show-title='false' w='38454' x='60746' y='11150'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='19267' id='14' name='D1-CvI' show-title='false' w='38454' x='60746' y='30733'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='19267' id='15' name='D1-NvI' show-title='false' w='40246' x='20500' y='30733'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='3933' id='6' name='D1-Map' pane-specification-id='0' param='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' type='color' w='40246' x='20500' y='26800'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                      <zone h='38850' id='7' name='Countries' show-title='false' w='19700' x='800' y='11150'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone forceUpdate='true' h='10617' id='23' type='text' w='44199' x='800' y='533'>
+                <formatted-text>
+                  <run bold='true' fontsize='36'>Global Causes of Death (2004)</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='10617' id='24' type='text' w='54201' x='44999' y='533'>
+                <formatted-text>
+                  <run>The WHO collects data on deaths caused by </run>
+                  <run fontname='Tableau Book,serif'>three main categories: Communicable Diseases, Non-Communicable Diseases, and Injuries. This </run>
+                  <run>dashboard shows the causes of death around the globe. All Values are Deaths per 100,000 Population.&#10;&#10;You can choose countries from the Countries list, Map, or Scatterplots.&#10;&#10;Retrieved from </run>
+                  <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;http://apps.who.int/gho/data/node.home&amp;quot;'>http://apps.who.int/gho/data/node.home</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='38666' id='25' name='D1-DeathsByCat' w='98400' x='800' y='53867'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3867' id='30' type='empty' w='98400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone fixed-size='160' h='6934' id='27' is-fixed='true' param='vert' type='layout-flow' w='98400' x='800' y='92533'>
+            <zone fixed-size='92' h='6666' id='29' is-fixed='true' name='D1-DeathsByCat' pane-specification-id='0' param='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' type='color' w='98400' x='800' y='92533'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='D2'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/D2?rev=' id='D2' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <style />
+      <size maxheight='1500' maxwidth='1000' minheight='1500' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='41333' id='31' param='horz' type='layout-flow' w='98400' x='800' y='11000'>
+            <zone h='41333' id='29' type='layout-basic' w='98400' x='800' y='11000'>
+              <zone h='41333' id='34' type='layout-basic' w='98400' x='800' y='11000'>
+                <zone h='41333' id='14' param='horz' type='layout-flow' w='98400' x='800' y='11000'>
+                  <zone h='41333' id='37' name='Countries' show-title='false' w='19500' x='800' y='11000'>
+                    <layout-cache cell-count-w='1' non-cell-size-w='116' type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='781' h='41333' id='10' is-fixed='true' name='D2-DeathDetailsF1' show-title='false' w='78900' x='20300' y='11000'>
+                    <layout-cache type-h='fixed' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone fixed-size='164' forceUpdate='true' h='10467' id='19' is-fixed='true' type='text' w='43700' x='800' y='533'>
+            <formatted-text>
+              <run bold='true' fontsize='36'>Specific Causes of Deaths</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='10467' id='36' type='text' w='54700' x='44500' y='533'>
+            <formatted-text>
+              <run>In the tables below, pick a country and a cause of death. The bottom of the dashboard will show how the countries compare against each other.&#10;&#10;To select the multiple causes, control-click on each cause.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='43067' id='11' name='D2-DeathDetails' show-title='false' w='98400' x='800' y='56400'>
+            <layout-cache minwidth='357' type-h='fixed' type-w='scalable' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='4067' id='38' type='empty' w='98400' x='800' y='52333'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+    <dashboard name='S1' type='storyboard'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/ForFinalProject-iter10/S1?rev=' id='S1' path='/workbooks/ForFinalProject-iter100' revision='' />
+      <style />
+      <size maxheight='1648' maxwidth='1048' minheight='1648' minwidth='1048' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='99030' id='1' param='vert' removable='false' type='layout-flow' w='98474' x='763' y='485'>
+            <zone h='6129' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98474' x='763' y='485' />
+            <zone h='92901' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98474' x='763' y='6614'>
+              <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Global Cause of Death Comparison by Country' captured-sheet='D1' id='1'>
+                    <capturedDeltas>
+                      <dashboard name='D1'>
+                        <zone id='24'>
+                          <formatted-text>
+                            <run>The WHO collects data on deaths caused by </run>
+                            <run fontname='Tableau Book,serif'>three main categories: Communicable Diseases, Non-Communicable Diseases, and Injuries. This </run>
+                            <run>dashboard shows the causes of death around the globe. All Values are Deaths per 100,000 Population.&#10;&#10;You can use this dashboard to compare death rates among countries and the breakdown of cause of death categories per country.  </run>
+                            <run bold='true'>Simply select a country (or multiple using Ctrl + Click) from the filter, map,  orscatterplots, and view the comparison breakdown below.</run>
+                            <run>&#10;&#10;Retrieved from </run>
+                            <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;http://apps.who.int/gho/data/node.home&amp;quot;'>http://apps.who.int/gho/data/node.home</run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                      <worksheet name='D1-Map'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[Latitude (generated)]' field-type='quantitative' max='14934321.842340842' min='-10084887.469650149' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.190eedt0907q4e1egkmnw1afmk09].[Longitude (generated)]' field-type='quantitative' max='16356522.639119428' min='-27150332.491909143' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Specific Causes of Death Comparison ' captured-sheet='D2' id='2'>
+                    <capturedDeltas>
+                      <dashboard name='D2'>
+                        <zone id='36'>
+                          <formatted-text>
+                            <run>In the tables below, </run>
+                            <run bold='true'>pick a country on the left and a cause of death on the right. The bottom of the dashboard will show how the countries compare against each other.</run>
+                            <run>Æ&#10;&#10;</run>
+                            <run bold='true'>To select multiple countries of causes, Ctrl-Click.</run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='About Us' captured-sheet='Ab' id='3'>
+                    <capturedDeltas>
+                      <dashboard name='Ab'>
+                        <zone id='1'>
+                          <formatted-text>
+                            <run fontsize='36'>Global Disease Prevalence</run>
+                            <run>&#10;MIDS W209 Final Project&#10;&#10;This visual is intended to be used by health conscious travelers and public health enthusiasts alike.  Through this visual, users can view overall death rates for countries across the globe, with the ability to drill down and compare prevalence rates for their selected causes of death for their selected countries.&#10;&#10;Team Members:&#10;Himal, Taiwo, Yang&#10;&#10;Data Source: WHO, Disease and injury country estimates&#10;* </run>
+                            <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;http://www.who.int/healthinfo/global_burden_disease/estimates_country/en/&amp;quot;'>http://www.who.int/healthinfo/global_burden_disease/estimates_country/en/</run>
+                            <run>&#10;* </run>
+                            <run auto-url='true' hyperlink='tabdoc:load-url url=&amp;quot;http://www.who.int/healthinfo/global_burden_disease/gbddeathdalycountryestimates2004.xls?ua=1&amp;quot;'>http://www.who.int/healthinfo/global_burden_disease/gbddeathdalycountryestimates2004.xls?ua=1</run>
+                            <run>Æ&#10;&#10;&#10;</run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='S1' tab-color='#17927d'>
+      <viewpoints />
+      <active id='-1' />
+    </window>
+    <window class='dashboard' name='D1' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='Countries'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='D1-CvI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='D1-CvN'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='D1-DeathsByCat'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='D1-Map'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+          <geo-search-visibility value='1' />
+          <default-map-tool-selection tool='2' />
+          <map-navigation value='1' />
+        </viewpoint>
+        <viewpoint name='D1-NvI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' name='D1-Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.190eedt0907q4e1egkmnw1afmk09].[max:Value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+        <geo-search-visibility value='1' />
+        <default-map-tool-selection tool='2' />
+        <map-navigation value='1' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='D1-Map-T1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='D1-Map-T2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Countries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='D1-CvN'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='D1-CvI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='D1-NvI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='D1-DeathsByCat'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+    </window>
+    <window class='dashboard' name='D2' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='Countries'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='D2-DeathDetails'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='D2-DeathDetailsF1'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' name='D2-DeathDetailsF1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.190eedt0907q4e1egkmnw1afmk09].[none:L2:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='D2-DeathDetails'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+    </window>
+    <window class='dashboard' name='Ab' tab-color='#dec77b'>
+      <viewpoints />
+      <active id='-1' />
+    </window>
+  </windows>
+</workbook>

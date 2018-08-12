@@ -17,5 +17,5 @@ WHO, Disease and injury country estimates
 ## Notes:
 The data folder contains the raw and combined data used by the visuals. The viz folder contains the various version of the visualizations. The latest visualization is GlobalDiseasePrevalence-iter101.twbx.
 
-The Tableau visualization is hosted in Tableau Public
-* https://public.tableau.com/profile/yang.yang.qian#!/vizhome/GlobalDiseasePrevalence-iter101/S1
+The Tableau visualization is hosted on the ISVC Server
+* http://people.ischool.berkeley.edu/~yangyang.qian/w209_global_deaths/
